@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 May, 2016, 4:00:06 PM
+    Author     : hp pc
+*/
+
+body{
+    background:buttonface;
+}
+
+#vh_head{
+    
+    font-size:2.4em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: Oleo Script;
+    color: #08538c;
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    width: 300px;
+}
+
+#top_right{
+    display: block;
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+        color: #08538c;
+    margin-left: 90%;
+  }
+#logo{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px
+}
+
+#side_bar{
+    float: left;
+    display: block;
+    position: absolute;
+    top: 0px;
+    border-right:  3px #FD9F3E solid;
+    width: 15%;
+    height: 88%;
+}
+
+
+    .black_overlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+    .white_content {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        border: 10px solid #08538c;
+        border-radius: 20px;
+        background-color: #FD9F3E;
+        color:#08538c;
+        z-index:1002;
+        overflow: auto;
+    }
+    #close_b{
+        float: right;
+        text-decoration: none;
+        font-size: 200%;
+        color: grey;
+        font-family: Oleo Script;
+        margin-top: -30px;
+    }
+    
+    #light a{
+        display: inline-block;
+        font-size: 150%;
+        padding: 10px;
+    }
+    
+    #close_b:hover{
+        color: darkgrey;
+    }
+#tabs a{
+    display: block;
+    border-bottom: 2px #505050 solid;
+    text-decoration: none;
+    font-size: 200%;
+    margin-top: 20px;
+    color: #08538c;
+    margin-bottom: 20px;
+    font-family: Times New Roman;
+    padding: 10px;
+}
+
+#h{
+    border-top: 2px #505050 solid;
+    padding-top: 20px;
+}
+#tabs a:hover{
+    color: black;
+}
+
+#total{    
+    margin-top: 15%;
+    margin-left:  20%;
+}
+#sales, #customer{
+    font-size: 150%; 
+    padding: 10px;
+    margin: 90px;
+    border: 2px #505050 solid;
+    color: #08538c;
+    padding: 10px;
+}
+
+#pop_head{
+    font-size: 200%;
+    padding: 10px;
+}
+
+#c_d{
+    font-size: 200%;
+    margin-left: 30%;
+    top: 20%;
+    padding-top: 150px;
+}
+
+#cu_t{
+    margin: 40px;
+    margin-left: 0%;
+    font-size: 150%;    
+    
+}
+
+#cu_t tr th{    
+    border: 1px #505050 solid;
+    font-size: 80%;
+    padding: 10px;
+    font-weight: 100 ;
+    text-decoration: none;
+    font-family: Times New Roman;
+}
+
+#customer_detail{
+    margin-top: 5%;
+    margin-left:  20%;
+}
+

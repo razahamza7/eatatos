@@ -1,0 +1,10 @@
+SMAP
+vendor_005fto_005fcustomer_005finvoice_jsp.java
+JSP
+*S JSP
+*F
++ 0 vendor_to_customer_invoice.jsp
+vendor_to_customer_invoice.jsp
+*L
+1,175:44
+*E

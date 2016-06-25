@@ -1,0 +1,338 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public final class create_005fadmin_005fvendor_005fmaneger_005fhub_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
+      out.write("<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->\r\n");
+      out.write("<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\r\n");
+      out.write("<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\r\n");
+      out.write("<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\r\n");
+      out.write("<!--[if gt IE 8]><!--> <html lang=\"en\"> <!--<![endif]-->\r\n");
+      out.write("<head>\r\n");
+      out.write("  <meta charset=\"utf-8\" />\r\n");
+      out.write(" <!-- Set the viewport width to device width for mobile -->\r\n");
+      out.write("  <meta name=\"viewport\" content=\"width=device-width\" />\r\n");
+      out.write("  <title>Eatatos.com  | Khilate hain dil se</title>\r\n");
+      out.write("  <!-- Included CSS Files -->\r\n");
+      out.write("  <!-- Combine and Compress These CSS Files -->\r\n");
+      out.write("  <link href=\"adminV/css/head.css\" rel=\"stylesheet\" type=\"text/css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/globals.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/typography.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/grid.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/ui.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/forms.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/orbit.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/reveal.css\">\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/mobile.css\">\r\n");
+      out.write("  <!-- End Combine and Compress These CSS Files -->\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"adminV/stylesheets/app.css\">\r\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"adminV/css/responsive-tables.css\">\r\n");
+      out.write("\t<script src=\"javascripts/jquery.min.js\"></script>\r\n");
+      out.write("\t<script src=\"js/responsive-tables.js\"></script>\r\n");
+      out.write("     <script>\r\n");
+      out.write("      function setupCalendars() {\r\n");
+      out.write("        // Embedded Calendar\r\n");
+      out.write("        Calendar.setup(\r\n");
+      out.write("          {\r\n");
+      out.write("            dateField: 'embeddedDateField',\r\n");
+      out.write("            parentElement: 'embeddedCalendar'\r\n");
+      out.write("          }\r\n");
+      out.write("        )\r\n");
+      out.write("\r\n");
+      out.write("        // Popup Calendar\r\n");
+      out.write("        Calendar.setup(\r\n");
+      out.write("          {\r\n");
+      out.write("            dateField: 'popupDateField',\r\n");
+      out.write("            triggerElement: 'popupDateField'\r\n");
+      out.write("          }\r\n");
+      out.write("        )\r\n");
+      out.write("      }\r\n");
+      out.write("\t\tEvent.observe(window, 'load', function() { setupCalendars() })\r\n");
+      out.write("    </script>\r\n");
+      out.write("     <script type=\"text/javascript\">\r\n");
+      out.write("            function cal(){\r\n");
+      out.write("var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');\r\n");
+      out.write("var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');\r\n");
+      out.write("\r\n");
+      out.write("//  DECLARE AND INITIALIZE VARIABLES\r\n");
+      out.write("var Calendar = new Date();\r\n");
+      out.write("\r\n");
+      out.write("var year = Calendar.getFullYear();     // Returns year\r\n");
+      out.write("var month = Calendar.getMonth();    // Returns month (0-11)\r\n");
+      out.write("var today = Calendar.getDate();    // Returns day (1-31)\r\n");
+      out.write("var weekday = Calendar.getDay();    // Returns day (1-31)\r\n");
+      out.write("\r\n");
+      out.write("var DAYS_OF_WEEK = 7;    // \"constant\" for number of days in a week\r\n");
+      out.write("var DAYS_OF_MONTH = 31;    // \"constant\" for number of days in a month\r\n");
+      out.write("var cal;    // Used for printing\r\n");
+      out.write("\r\n");
+      out.write("Calendar.setDate(1);    // Start the calendar day at '1'\r\n");
+      out.write("Calendar.setMonth(month);    // Start the calendar month at now\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("/* VARIABLES FOR FORMATTING\r\n");
+      out.write("NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'\r\n");
+      out.write("      tags to customize your caledanr's look. */\r\n");
+      out.write("\r\n");
+      out.write("var TR_start = '<TR>';\r\n");
+      out.write("var TR_end = '</TR>';\r\n");
+      out.write("var highlight_start = '<TD WIDTH=\"30\"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';\r\n");
+      out.write("var highlight_end   = '</CENTER></TD></TR></TABLE></B>';\r\n");
+      out.write("var TD_start = '<TD WIDTH=\"30\"><CENTER>';\r\n");
+      out.write("var TD_end = '</CENTER></TD>';\r\n");
+      out.write("\r\n");
+      out.write("/* BEGIN CODE FOR CALENDAR\r\n");
+      out.write("NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'\r\n");
+      out.write("tags to customize your calendar's look.*/\r\n");
+      out.write("\r\n");
+      out.write("cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';\r\n");
+      out.write("cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;\r\n");
+      out.write("cal += '<TD COLSPAN=\"' + DAYS_OF_WEEK + '\" BGCOLOR=\"# EFEFEF\"><CENTER><B>';\r\n");
+      out.write("cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;\r\n");
+      out.write("cal += TR_start;\r\n");
+      out.write("\r\n");
+      out.write("//   DO NOT EDIT BELOW THIS POINT  //\r\n");
+      out.write("\r\n");
+      out.write("// LOOPS FOR EACH DAY OF WEEK\r\n");
+      out.write("for(index=0; index < DAYS_OF_WEEK; index++)\r\n");
+      out.write("{\r\n");
+      out.write("\r\n");
+      out.write("// BOLD TODAY'S DAY OF WEEK\r\n");
+      out.write("if(weekday == index)\r\n");
+      out.write("cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;\r\n");
+      out.write("\r\n");
+      out.write("// PRINTS DAY\r\n");
+      out.write("else\r\n");
+      out.write("cal += TD_start + day_of_week[index] + TD_end;\r\n");
+      out.write("}\r\n");
+      out.write("\r\n");
+      out.write("cal += TD_end + TR_end;\r\n");
+      out.write("cal += TR_start;\r\n");
+      out.write("\r\n");
+      out.write("// FILL IN BLANK GAPS UNTIL TODAY'S DAY\r\n");
+      out.write("for(index=0; index < Calendar.getDay(); index++)\r\n");
+      out.write("cal += TD_start + '  ' + TD_end;\r\n");
+      out.write("\r\n");
+      out.write("// LOOPS FOR EACH DAY IN CALENDAR\r\n");
+      out.write("for(index=0; index < DAYS_OF_MONTH; index++)\r\n");
+      out.write("{\r\n");
+      out.write("if( Calendar.getDate() > index )\r\n");
+      out.write("{\r\n");
+      out.write("  // RETURNS THE NEXT DAY TO PRINT\r\n");
+      out.write("  week_day =Calendar.getDay();\r\n");
+      out.write("\r\n");
+      out.write("  // START NEW ROW FOR FIRST DAY OF WEEK\r\n");
+      out.write("  if(week_day == 0)\r\n");
+      out.write("  cal += TR_start;\r\n");
+      out.write("\r\n");
+      out.write("  if(week_day != DAYS_OF_WEEK)\r\n");
+      out.write("  {\r\n");
+      out.write("\r\n");
+      out.write("  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES\r\n");
+      out.write("  var day  = Calendar.getDate();\r\n");
+      out.write("\r\n");
+      out.write("  // HIGHLIGHT TODAY'S DATE\r\n");
+      out.write("  if( today==Calendar.getDate() )\r\n");
+      out.write("  cal += highlight_start + day + highlight_end + TD_end;\r\n");
+      out.write("\r\n");
+      out.write("  // PRINTS DAY\r\n");
+      out.write("  else\r\n");
+      out.write("  cal += TD_start + day + TD_end;\r\n");
+      out.write("  }\r\n");
+      out.write("\r\n");
+      out.write("  // END ROW FOR LAST DAY OF WEEK\r\n");
+      out.write("  if(week_day == DAYS_OF_WEEK)\r\n");
+      out.write("  cal += TR_end;\r\n");
+      out.write("  }\r\n");
+      out.write("\r\n");
+      out.write("  // INCREMENTS UNTIL END OF THE MONTH\r\n");
+      out.write("  Calendar.setDate(Calendar.getDate()+1);\r\n");
+      out.write("\r\n");
+      out.write("}// end for loop\r\n");
+      out.write("\r\n");
+      out.write("cal += '</TD></TR></TABLE></TABLE>';\r\n");
+      out.write("\r\n");
+      out.write("//  PRINT CALENDAR\r\n");
+      out.write("document.write(cal);\r\n");
+      out.write("\r\n");
+      out.write("//  End -->\r\n");
+      out.write("}\r\n");
+      out.write("           </script>\r\n");
+      out.write("\t<!--[if lt IE 9]>\r\n");
+      out.write("  <link rel=\"stylesheet\" href=\"stylesheets/ie.css\">\r\n");
+      out.write("  <![endif]-->\r\n");
+      out.write("  <!-- IE Fix for HTML5 Tags -->\r\n");
+      out.write("  <!--[if lt IE 9]>\r\n");
+      out.write("  <script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n");
+      out.write("  <![endif]-->\r\n");
+      out.write(" </head>\r\n");
+      out.write("<body>\r\n");
+      out.write("\t");
+      
+             ArrayList  m= (ArrayList)request.getAttribute("avid");
+             ArrayList  n= (ArrayList)request.getAttribute("aname");
+             ArrayList  o= (ArrayList)request.getAttribute("acity");
+             ArrayList  p= (ArrayList)request.getAttribute("aarea");
+             ArrayList  q= (ArrayList)request.getAttribute("aadd");
+             ArrayList  r= (ArrayList)request.getAttribute("acont");
+             ArrayList  s= (ArrayList)request.getAttribute("astat");
+             
+             Iterator  im= m.iterator();
+            Iterator  in= n.iterator();
+            Iterator  io= o.iterator();
+            Iterator  ip= p.iterator();
+            Iterator  iq= q.iterator();
+            Iterator  ir= r.iterator();
+            Iterator  is= s.iterator();
+            
+            
+      out.write("\r\n");
+      out.write("    <!-- container -->\r\n");
+      out.write("\t<div class=\"container\">\r\n");
+      out.write("<p style=\"font-family:'Times New Roman', Times, serif; font-size:15px; color:#08538c; text-align:center; margin-left:70%\">WELCOME!<span>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</span><br><a href=\"Logout\">Logout</a></p><br> <img id=\"logo\" src=\"adminV/images/FINAL4.png\" alt=\"logo\" width=\"100\" hight=\"100\">\r\n");
+      out.write("    <div class=\"row\">\r\n");
+      out.write("\t\t\t<div class=\"twelve columns\">\r\n");
+      out.write("\t\t\t\t<h2 align=\"left\">Vendor Admin Hub</h2><br>\r\n");
+      out.write("                <div id=\"total\">\r\n");
+      out.write("            <a id=\"customer\" href=\"create_vendor_registration.jsp\"><u><b><< &nbsp;Create New &nbsp; >></b></u></a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            <hr />\r\n");
+      out.write("         \t\t<table width=\"95%\" class=\"responsive\" style=\"margin-left:3%\">\r\n");
+      out.write("                 \t<div id=\"customer_detail\" align=\"center\" style=\"font-size:25px\">\r\n");
+      out.write("            \t\t\t<a id=\"c_d\">Vendor's Details</a>\r\n");
+      out.write("           \t\t\t</div><br>\r\n");
+      out.write("           \t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t\t \t<th>S. No.</th>\r\n");
+      out.write("                            <th>Vendor Reg. Id</th>\r\n");
+      out.write("                            <th>Name</th>\r\n");
+      out.write("                             <th>City</th>\r\n");
+      out.write("                            <th>Area</th>\r\n");
+      out.write("                            <th>Address</th>\r\n");
+      out.write("                            <th>Contact No.</th>\r\n");
+      out.write("                            <th>Status</th>\r\n");
+      out.write("                            <th>Total Sales: &#8377</th>\r\n");
+      out.write("                    \t</tr>\r\n");
+      out.write("                        ");
+ while(im.hasNext()){
+      out.write("\r\n");
+      out.write("\t\t\t\t\t<tr>\r\n");
+      out.write("\t\t\t\t\t\t<td><center>1</center></td>\r\n");
+      out.write("\t\t\t\t\t\t<td><center>");
+      out.print(im.next());
+      out.write("</center></td>\r\n");
+      out.write("\t\t\t\t\t\t<td><a id=\"nam\" style=\"text-decoration: none; color: black\" href = \"javascript:void(0)\" onclick = \"document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'\">Hamza Raza</a></td>\r\n");
+      out.write("                       <div id=\"light\" class=\"white_content\">\r\n");
+      out.write("                    <a id='close_b' href = \"javascript:void(0)\" onclick = \"document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'\">x</a>\r\n");
+      out.write("                    <a id='pop_head' style=\"font-size:15px; font-weight:bold; color:hsla(0,0%,0%,1.00)\">");
+      out.print(in.next());
+      out.write(" INFORMATION</a><br>\r\n");
+      out.write("                    <a style=\"font-size:15px; font-weight:bold; color:hsla(0,0%,0%,1.00)\">Joining Date:</a><input type=\"date\"><br>\r\n");
+      out.write("                   \r\n");
+      out.write("                    <a href=\"create_vendor_registration.jsp\" style=\"font-size:15px; font-weight:bold; color:hsla(0,0%,0%,1.00)\">Vendor Registration</a><br>\r\n");
+      out.write("                    <a href=\"create_vendor_menu_&_price.jsp\" style=\"font-size:15px; font-weight:bold; color:hsla(0,0%,0%,1.00)\">Update Menu</a>\r\n");
+      out.write("                  </div>\r\n");
+      out.write("                   <div id=\"fade\" class=\"black_overlay\"></div>\r\n");
+      out.write("\t\t\t\t\t\t<td>Lucknow</td>\r\n");
+      out.write("\t\t\t\t\t\t<td>Hazratganj</td>\r\n");
+      out.write("                        <td>house no 7, ring road</td>\r\n");
+      out.write("                        <td><center>8052229980</center></td>\r\n");
+      out.write("                        <td><center>Active</center></td>\r\n");
+      out.write("                        <td><center>______</center></td>\r\n");
+      out.write("                        </tr>\r\n");
+      out.write("\t\t\t");
+}
+      out.write("\t\t\r\n");
+      out.write("    \t\t\t </table>\r\n");
+      out.write("                 </div>\r\n");
+      out.write("\t\t     </div>\r\n");
+      out.write("          </div>\r\n");
+      out.write("             <div class=\"footer-section\">\r\n");
+      out.write("\t\t\t\t\t<div class=\"container\" align=\"center\">\r\n");
+      out.write("\t\t\t\t\t\t<div class=\"footer-top\">\r\n");
+      out.write("                        \r\n");
+      out.write("\t\t\t\t\t\t<p>© 2016<span> Eatatos Pvt Ltd.</span> All rights reserved | Design by <a href=\"#\">EATATOS</a></p>\r\n");
+      out.write("\t\t\t\t\t</div>\r\n");
+      out.write("\t\t\t\t\t<script type=\"text/javascript\">\r\n");
+      out.write("\t\t\t\t\t\t$(document).ready(function() {\r\n");
+      out.write("\t\t\t\t\t\t\t/*\r\n");
+      out.write("\t\t\t\t\t\t\tvar defaults = {\r\n");
+      out.write("\t\t\t\t\t  \t\t\tcontainerID: 'toTop', // fading element id\r\n");
+      out.write("\t\t\t\t\t\t\t\tcontainerHoverID: 'toTopHover', // fading element hover id\r\n");
+      out.write("\t\t\t\t\t\t\t\tscrollSpeed: 1200,\r\n");
+      out.write("\t\t\t\t\t\t\t\teasingType: 'linear' \r\n");
+      out.write("\t\t\t\t\t \t\t};\r\n");
+      out.write("\t\t\t\t\t\t\t*/\r\n");
+      out.write("\t\t\t\t\t\t\t\r\n");
+      out.write("\t\t\t\t\t\t\t$().UItoTop({ easingType: 'easeOutQuart' });\r\n");
+      out.write("\t\t\t\t\t\t\t\r\n");
+      out.write("\t\t\t\t\t\t});\r\n");
+      out.write("\t\t\t\t\t</script>\r\n");
+      out.write("\t\t\t\t<a href=\"#\" id=\"toTop\" style=\"display: block;\"> <span id=\"toTopHover\" style=\"opacity: 1;\"> </span></a>\r\n");
+      out.write("\t\t\t\t  </div>\r\n");
+      out.write("\t\t\t</div>\r\n");
+      out.write("            \r\n");
+      out.write("               </div>\r\n");
+      out.write("\t\t     </div>\r\n");
+      out.write("          </div>\r\n");
+      out.write("      </body>\r\n");
+      out.write("   </html>\r\n");
+      out.write("\r\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

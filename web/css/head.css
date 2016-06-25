@@ -1,0 +1,123 @@
+ body {
+        font-family: Trebuchet MS;
+      }
+      div.calendar {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      div.calendar table {
+        width: 100%;
+      }
+      div.dateField {
+        width: 140px;
+        padding: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        color: #555;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      div#popupDateField:hover {
+        background-color: #cde;
+        cursor: pointer;
+      }		
+		
+		
+		
+		
+.button {
+  background-color: #f4511e;
+  border-bottom: 5px #FD9F3E solid;
+    color: #08538c;
+  text-align: center;
+  border: 1px #FD9F3E solid;
+  font-size: 28px;
+  padding: 20px;
+  width: 188px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: Times New Roman;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ .multiselect {
+        width: 200px;
+    }
+    .selectBox {
+        position: relative;
+    }
+    .selectBox select {
+        width: 100%;
+        font-weight: bold;
+    }
+    .overSelect {
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+    }
+    #checkboxes {
+        display: none;
+        border: 1px #dadada solid;
+    }
+    #checkboxes label {
+        display: block;
+    }
+    #checkboxes label:hover {
+        background-color: #1e90ff;
+    }
+
+button {
+  background-color: #6BBE92;
+  width: 302px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+ 
+ .button1 {
+ background-color:#FD9F3E; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    .button2:hover {
+    background-color: #08538c;  
+    color: white;
+    }
+

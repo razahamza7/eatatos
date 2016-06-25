@@ -1,0 +1,16 @@
+SMAP
+become_005fpartner_jsp.java
+JSP
+*S JSP
+*F
++ 0 become_partner.jsp
+become_partner.jsp
+*L
+1,28:44
+28,2:72
+29,10:74
+38,2:84
+39:86
+40,2:87,3
+42,118:93
+*E

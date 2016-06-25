@@ -1,0 +1,44 @@
+
+ .button1 {
+ background-color:#FD9F3E; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    .button2:hover {<h2>This is the content for Layout H2 Tag</h2>
+    background-color: #08538c;
+    color: white;
+    }
+ 
+table {
+    border-collapse: collapse;
+    width: 95%;
+	text-align:center;
+	
+	}
+
+th, td {
+    text-align: left;
+    padding: 3px;
+}
+
+tr:nth-child(even){background-color:#FFF}
+
+th {
+    background-color:#FD9F3E;
+    color:#08538c;
+	font-size:24px;
+}
+.table01{
+	font-weight:bold; color:#066; font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size:24px;}
+
+
+
